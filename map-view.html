@@ -1,0 +1,19 @@
+<div ng-hide="true">
+  <canvas id="cluster" width="30" height="30"></canvas>
+</div>
+
+<!-- Add back in if clusters come back
+  doCluster="true"
+  clusterOptions="clusterOpts"
+-->
+
+<ui-gmap-google-map center='map.center' zoom='map.zoom' options="mapOptions" events="map.events" bounds="map.bounds">
+    <ui-gmap-markers
+            models='markers'
+            coords="'self'"
+            idkey='markers.id'
+            click="openPopover"
+            options="markerOptions"
+            >
+    </ui-gmap-markers>
+</ui-gmap-google-map>
