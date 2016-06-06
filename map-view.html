@@ -7,12 +7,11 @@
   clusterOptions="clusterOpts"
 -->
 
-<ui-gmap-google-map center='map.center' zoom='map.zoom' options="mapOptions" events="map.events" bounds="map.bounds">
+<ui-gmap-google-map center='map.center' zoom='map.zoom'>
     <ui-gmap-markers
             models='markers'
             coords="'self'"
             idkey='markers.id'
-            click="openPopover"
             options="markerOptions"
             >
     </ui-gmap-markers>
